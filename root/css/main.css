@@ -176,10 +176,9 @@ body {
   background-image: url(../images/bg-pattern-mobile-nav.svg);
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-size: contain;
   bottom: 0;
   color: #fafafa;
-  height: 86%;
+  height: 86vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -187,6 +186,7 @@ body {
   padding-top: 5rem;
   position: absolute;
   width: 100%;
+  overflow: hidden;
 }
 
 .nav-links-container .links {

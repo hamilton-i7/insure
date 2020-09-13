@@ -12,11 +12,9 @@ menuIcon.addEventListener("click", () => {
         linksContainer.classList.remove("animate-out");
         linksContainer.classList.remove("hide");
         linksContainer.classList.add("animate");
-        body.classList.add("stop-scroll");
     } else {
         menuIcon.setAttribute("src", `images/icon-${hamburger}`);
         linksContainer.classList.remove("animate");
         linksContainer.classList.add("animate-out");
-        body.classList.remove("stop-scroll");
     }
 });
