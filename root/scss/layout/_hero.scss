@@ -1,0 +1,40 @@
+.hero {
+
+    &-img-box {
+
+        & img {
+            @extend .img;
+        }
+    }
+
+    &-info {
+        background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+        background-color: color("primary-1");
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        color: color("neutral-3");
+        display: flex;
+        justify-content: center;
+        padding: 8rem 0;
+
+        &-container {
+            @extend .container;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            & .title {
+                margin-bottom: 1.8rem;
+            }
+
+            & .par {
+                margin-bottom: 2.5rem;
+            }
+
+            & .cta {
+
+            }
+        }
+    }
+}

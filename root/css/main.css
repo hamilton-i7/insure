@@ -1,0 +1,142 @@
+.container, .hero-info-container, .main-nav-container {
+  max-width: 40rem;
+  min-width: 20rem;
+  width: 88%;
+}
+
+.img, .main-nav-container .logo-box .logo, .main-nav-container .links-box .menu-icon, .hero-img-box img {
+  display: block;
+  width: 100%;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.heading, .hero-info-container .title {
+  font-family: "DM Serif Display", serif;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.hero-info {
+  font-size: large;
+}
+
+.hero-info-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-info-container .title {
+  font-size: 2.5em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.hero-info-container .par {
+  font-size: .9em;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.btn, .btn--hero {
+  background: none;
+  border: 0.2rem solid #fafafa;
+  color: #fafafa;
+  outline: none;
+  padding: 1rem 3rem;
+}
+
+.btn span, .btn--hero span {
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+
+.main-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-nav-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-info {
+  background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+  background-color: #2d2640;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8rem 0;
+}
+
+.hero-info-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-info-container .title {
+  margin-bottom: 1.8rem;
+}
+
+.hero-info-container .par {
+  margin-bottom: 2.5rem;
+}

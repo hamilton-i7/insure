@@ -1,0 +1,16 @@
+.btn {
+    background: none;
+    border: .2rem solid color("neutral-3");
+    color: color("neutral-3");
+    outline: none;
+    padding: 1rem 3rem;
+
+    & span {
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+    }
+
+    &--hero {
+        @extend .btn;
+    }
+}

@@ -1,0 +1,27 @@
+.main-nav {
+    align-items: center;
+    display: flex;
+    height: 9.2rem;
+    justify-content: center;
+
+    &-container {
+        @extend .container;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        & .logo-box {
+
+            .logo {
+                @extend .img;
+            }
+        }
+
+        & .links-box {
+
+            .menu-icon {
+                @extend .img;
+            }
+        }
+    }
+}

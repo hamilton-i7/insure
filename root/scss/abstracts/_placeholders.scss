@@ -1,0 +1,11 @@
+//? Styles that are only meant to be extended & have a relationship with semantic classes.
+.container {
+    max-width: 40rem;
+    min-width: 20rem;
+    width: 88%;
+}
+
+.img {
+    display: block;
+    width: 100%;
+}

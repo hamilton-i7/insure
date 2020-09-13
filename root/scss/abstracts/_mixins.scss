@@ -1,0 +1,6 @@
+//? Reusable styles throughout the stylesheet
+@mixin font-styles($family, $size: inherit, $weight: inherit) {
+    font-family: font($family);
+    font-size: $size;
+    font-weight: $weight;
+}
