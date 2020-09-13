@@ -1,12 +1,73 @@
-.container, .hero-info-container, .main-nav-container {
+.container, .hero-info-container, .main-nav-container, .nav-links-container .links {
   max-width: 40rem;
   min-width: 20rem;
   width: 88%;
 }
 
-.img, .main-nav-container .logo-box .logo, .main-nav-container .links-box .menu-icon, .hero-img-box img {
+.img, .logo-box .logo, .hamburger-box .menu-icon, .hero-img-box img {
   display: block;
   width: 100%;
+}
+
+.stop-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slide-out {
+  from {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
 }
 
 *, *::before, *::after {
@@ -55,27 +116,30 @@ body {
 }
 
 .hero-info-container .title {
-  font-size: 2.5em;
-  line-height: 1.2;
+  font-size: 2.6em;
+  line-height: 1;
   text-align: center;
 }
 
 .hero-info-container .par {
-  font-size: .9em;
+  font-size: .93em;
   line-height: 1.7;
   text-align: center;
 }
 
-.btn, .btn--hero {
+.btn, .btn--hero, .nav-links-container .links li:last-child {
   background: none;
   border: 0.2rem solid #fafafa;
   color: #fafafa;
+  font-family: inherit;
+  font-size: inherit;
   outline: none;
-  padding: 1rem 3rem;
+  padding: 1rem;
+  text-align: center;
 }
 
-.btn span, .btn--hero span {
-  letter-spacing: .2rem;
+.btn span, .btn--hero span, .nav-links-container .links li:last-child span {
+  letter-spacing: .1rem;
   text-transform: uppercase;
 }
 
@@ -104,12 +168,78 @@ body {
           justify-content: space-between;
 }
 
+.nav-links-container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #2b272f;
+  background-image: url(../images/bg-pattern-mobile-nav.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 0;
+  color: #fafafa;
+  height: 86.5vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  padding-top: 5rem;
+  position: absolute;
+  width: 100%;
+}
+
+.nav-links-container .links {
+  display: -ms-grid;
+  display: grid;
+  font-size: 2.2rem;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  list-style: none;
+  row-gap: 3rem;
+}
+
+.nav-links-container .links li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.nav-links-container .links li:last-child {
+  padding: 1.5rem 0;
+  width: 100%;
+}
+
+.nav-links-container .links li a {
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.animate {
+  -webkit-animation: slide-in .5s ease-out forwards;
+          animation: slide-in .5s ease-out forwards;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.animate-out {
+  -webkit-animation: slide-out .5s ease-out forwards;
+          animation: slide-out .5s ease-out forwards;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .hero-info {
   background-image: url(../images/bg-pattern-intro-left-mobile.svg);
   background-color: #2d2640;
   background-position: left top;
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 42%;
   color: #fafafa;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,4 +269,10 @@ body {
 
 .hero-info-container .par {
   margin-bottom: 2.5rem;
+}
+
+.hero-info-container .cta {
+  max-width: 16rem;
+  min-width: 12rem;
+  width: 45%;
 }

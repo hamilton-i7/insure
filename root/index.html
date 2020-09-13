@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/main.css">
   
   <title>Frontend Mentor | Insure landing page</title>
+  <script src="js/script.js" defer></script>
 </head>
 <body>
   <nav class="main-nav">
@@ -18,8 +19,17 @@
         <img src="images/logo.svg"  class="logo" alt="Insure logo">
       </figure>
   
-      <div class="links-box">
-        <img src="images/icon-hamburger.svg" class="menu-icon" alt="Menu icon">
+      <div class="hamburger-box">
+        <img src="images/icon-hamburger.svg" class="menu-icon js--menuIcon" alt="Menu icon">
+      </div>
+
+      <div class="nav-links-container hide js--linksContainer">
+        <ul class="links">
+          <li><a href="#">how we work</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">account</a></li>
+          <li><a href="#">view plans</a></li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -41,11 +51,6 @@
 </html>
 
 <!-- 
-    How we work
-  Blog
-  Account
-  View plans
-
   We’re different
 
   Snappy Process

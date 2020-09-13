@@ -12,7 +12,7 @@
         background-color: color("primary-1");
         background-position: left top;
         background-repeat: no-repeat;
-        background-size: 50%;
+        background-size: 42%;
         color: color("neutral-3");
         display: flex;
         justify-content: center;
@@ -33,7 +33,9 @@
             }
 
             & .cta {
-
+                max-width: 16rem;
+                min-width: 12rem;
+                width: 45%;
             }
         }
     }

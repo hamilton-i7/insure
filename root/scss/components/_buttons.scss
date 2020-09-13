@@ -2,11 +2,14 @@
     background: none;
     border: .2rem solid color("neutral-3");
     color: color("neutral-3");
+    font-family: inherit;
+    font-size: inherit;
     outline: none;
-    padding: 1rem 3rem;
+    padding: 1rem;
+    text-align: center;
 
     & span {
-        letter-spacing: .2rem;
+        letter-spacing: .1rem;
         text-transform: uppercase;
     }
 
